@@ -1,0 +1,45 @@
+/* Variables */
+:root {
+    --black-button-color: #0A0E16;
+    --colored-button-color: linear-gradient(123.32deg, #FF9500 51.94%, #F8359E 115.67%);
+    --button-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    --secondary-color: #6c757d;
+    --text-color: #FFF;
+    --trade-header-shadow: drop-shadow(0px 0px 64px rgba(0, 0, 0, 0.3));
+    --text-button: #FFF;
+    --main-background-color: #111928;
+    --input-background-color: #171F2F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    background: var(--main-background-color);
+    font-family: Inter, sans-serif;
+    color: var(--text-color);
+
+    a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+}
+
+input {
+    color: var(--text-color);
+    font-size: 14px;
+
+    &::placeholder {
+        color: var(--text-color);
+    }
+}
+
+h1 {
+    font-size: 30px;
+}
+
+button {
+    cursor: pointer;
+}
