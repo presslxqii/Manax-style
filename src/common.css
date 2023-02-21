@@ -1,6 +1,9 @@
 /* Variables */
 :root {
     --black-button-color: #0A0E16;
+    --table-header: #0A0E16;
+    --table-text-color: #FFFFFF80;
+    --table-hover-color: #171E2D;
     --colored-button-color: linear-gradient(123.32deg, #FF9500 51.94%, #F8359E 115.67%);
     --button-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
     --secondary-color: #6c757d;
@@ -9,6 +12,10 @@
     --text-button: #FFF;
     --main-background-color: #111928;
     --input-background-color: #171F2F;
+    --percent-rise-background-color: #ECFDF31A;
+    --percent-rise-color: #12B76A;
+    --percent-decrease-color: #F04438;
+    --percent-decrease-background-color: #F044381A;
 }
 
 * {

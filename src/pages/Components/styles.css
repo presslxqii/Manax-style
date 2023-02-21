@@ -1,6 +1,6 @@
 .colored-button {
     color: var(--text-button);
-    background:  var(--colored-button-color);
+    background: var(--colored-button-color);
     box-shadow: var(--button-shadow);
     font-size: 16px;
     line-height: 20px;
@@ -14,7 +14,7 @@
 
 .black-button {
     color: var(--text-button);
-    background:  var(--black-button-color);
+    background: var(--black-button-color);
     padding: 18px 22px;
     border-radius: 12px;
     font-size: 16px;
@@ -33,7 +33,7 @@
     font-size: 14px;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         background-color: var(--black-button-color);
     }
 
@@ -43,10 +43,11 @@
 }
 
 .components-container {
-    display: flex;
-    column-gap: 10px;
+    display: grid;
+    row-gap: 10px;
 }
 
+/* Search style */
 .search-container {
     background-color: var(--input-background-color);
     padding: 8px 14px;
@@ -62,4 +63,111 @@
         outline: none;
         -webkit-appearance: none;
     }
+}
+
+/* Table style */
+.table-container {
+    .table {
+        text-transform: uppercase;
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        color: var(--table-text-color);
+        font-weight: 500;
+
+        tr {
+            &:not(:first-child) {
+                &:hover {
+                    background-color: var(--table-hover-color);
+                }
+            }
+
+            &:first-child {
+                background-color: var(--table-header);
+            }
+
+            th {
+                text-align: left;
+                font-weight: 500;
+                padding: 18px 0 18px 24px;
+
+                &:first-child {
+                    border-radius: 8px 0 0 8px;
+                }
+
+                &:last-child {
+                    border-radius: 0 8px 8px 0;
+                }
+            }
+
+            td {
+                padding: 12px 0 12px 24px;
+
+                &:first-child {
+                    border-radius: 8px 0 0 8px;
+                }
+
+                &:last-child {
+                    border-radius: 0 8px 8px 0;
+                }
+            }
+        }
+    }
+}
+
+/* Percent style */
+@define-mixin percent $bg, $color, $content {
+    padding: 2px 8px;
+    border-radius: 16px;
+    background-color: $bg;
+    display: flex;
+    align-items: center;
+    color: $color;
+    width: 65px;
+
+    &::after {
+        content: "%";
+        line-height: 20px;
+        margin-left: 1px;
+    }
+
+    &::before {
+        height: 14px;
+        margin-right: 4px;
+        content: $content;
+    }
+}
+
+.percent-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    position: relative;
+
+    .rise {
+        @mixin percent var(--percent-rise-background-color), var(--percent-rise-color), url("/src/assets/arrow-up.svg")
+    }
+
+    .decrease {
+        @mixin percent var(--percent-decrease-background-color), var(--percent-decrease-color), url("/src/assets/arrow-down.svg");
+    }
+}
+
+/* Chart of table */
+@define-mixin chart $content {
+    background-image: $content;
+    width: 100px;
+    height: 40px;
+}
+
+.table-chart-container {
+    .chart-rise {
+        @mixin chart url("/src/assets/chart-rise.svg")
+    }
+
+    .chart-decrease {
+        @mixin chart url("/src/assets/chart-decrease.svg")
+    }
+
 }
