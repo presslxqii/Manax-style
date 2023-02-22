@@ -16,6 +16,11 @@
     --percent-rise-color: #12B76A;
     --percent-decrease-color: #F04438;
     --percent-decrease-background-color: #F044381A;
+    --notification-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.1), 0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+    --notification-img-backgroud-color: linear-gradient(123.32deg, #FF9500 51.94%, #F8359E 115.67%);
+    --notification-text-backgroud-color: #FFF;
+    --notification-text-color: #667085;
+    --notification-title-color: #101828;
 }
 
 * {

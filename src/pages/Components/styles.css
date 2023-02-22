@@ -171,3 +171,49 @@
     }
 
 }
+
+.notification-container {
+    display: flex;
+    width: 440px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .img-container {
+        background: var(--notification-img-backgroud-color);
+        width: 80px;
+        display: flex;
+        padding: 12px 24px;
+    }
+
+    .text-container {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        box-shadow: var(--notification-shadow);
+        background-color: var(--notification-text-backgroud-color);
+        width: 100%;
+        padding: 16px 20px;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            column-gap: 4px;
+            font-size: 14px;
+            .title {
+                color: var(--notification-title-color);
+                line-height: 20px;
+            }
+
+            .message {
+                color: var(--notification-text-color);
+                line-height: 20px;
+            }
+        }
+
+        .hide-notification-container {
+            cursor: pointer;
+            position: absolute;
+            right: 16px;
+        }
+    }
+}
