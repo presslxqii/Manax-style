@@ -172,6 +172,8 @@
 
 }
 
+
+/* Notification popup */
 .notification-container {
     display: flex;
     width: 440px;
@@ -216,4 +218,17 @@
             right: 16px;
         }
     }
+}
+
+/* Short header */
+.header {
+    padding: 24px;
+    width: 100%;
+    background-image: url("/src/assets/header.png");
+    filter: var(--trade-header-shadow);
+    border-radius: 24px;
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    justify-content: space-between;
 }
