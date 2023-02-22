@@ -44,7 +44,7 @@
 
 .components-container {
     display: grid;
-    row-gap: 10px;
+    row-gap: 16px;
 }
 
 /* Search style */
