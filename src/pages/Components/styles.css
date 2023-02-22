@@ -1,15 +1,26 @@
+/* Chart of table */
 .colored-button {
     color: var(--text-button);
     background: var(--colored-button-color);
     box-shadow: var(--button-shadow);
-    font-size: 16px;
-    line-height: 20px;
     font-weight: 500;
+    border-radius: 12px;
+    border: none;
+    line-height: 20px;
+}
+
+.colored-big-button {
+    @extend .colored-button;
+    font-size: 16px;
     padding: 10px 16px;
     width: 166px;
     height: 56px;
-    border-radius: 12px;
-    border: none;
+}
+
+.colored-medium-button {
+    @extend .colored-button;
+    font-size: 14px;
+    padding: 10px 28px;
 }
 
 .black-button {
@@ -144,6 +155,7 @@
     justify-content: center;
     width: 68px;
     position: relative;
+    font-size: 14px;
 
     .rise {
         @mixin percent var(--percent-rise-background-color), var(--percent-rise-color), url("/src/assets/arrow-up.svg")

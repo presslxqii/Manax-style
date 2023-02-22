@@ -1,5 +1,6 @@
 /* Variables */
 :root {
+    --wallets-background-color: #0A0E16;
     --black-button-color: #0A0E16;
     --table-header: #0A0E16;
     --table-text-color: #FFFFFF80;
@@ -21,6 +22,9 @@
     --notification-text-backgroud-color: #FFF;
     --notification-text-color: #667085;
     --notification-title-color: #101828;
+    --wallet-border: 1px solid #1A2232;
+    --wallet-text-color: #98A2B3;
+    --wallet-amount-color: #667085;
 }
 
 * {
