@@ -17,26 +17,6 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.svg$/i,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[name].[ext]',
-							outputPath: 'images/',
-						},
-					},
-				],
-			},
-			{
-				test: /\.(png|jpe?g|gif)$/i,
-				use: [
-					{
-						loader: 'file-loader',
-					},
-				],
-			},
-			{
 				test: /\.css$/i,
 				use: ['style-loader', 'css-loader', 'postcss-loader'],
 			},
