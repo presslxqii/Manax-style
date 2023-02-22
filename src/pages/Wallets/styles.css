@@ -41,11 +41,18 @@
 
                 }
 
-                .currencies {
+                .hide {
                     &::after {
-                        content: url("/src/assets/arrow-up.svg");
+                        content: url("/src/assets/expand-arrow.svg");
+                        cursor: pointer;
                     }
+                }
 
+                .open {
+                    &::after {
+                        content: url("/src/assets/collapse-arrow.svg");
+                        cursor: pointer;
+                    }
                 }
             }
 
