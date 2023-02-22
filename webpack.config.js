@@ -7,7 +7,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
 	entry: {
 		components: './src/pages/Components/index.js',
-		trade: './src/pages/Trade/index.js'
+		trade: './src/pages/Trade/index.js',
+		wallets: './src/pages/Wallets/index.js'
 	},
 	mode: 'development',
 	output: {
@@ -40,6 +41,11 @@ module.exports = {
 			filename: 'trade.html',
 			template: 'src/pages/Trade/index.html',
 			chunks: ['trade'],
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'wallets.html',
+			template: 'src/pages/Wallets/index.html',
+			chunks: ['wallets'],
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].bundle.css'
