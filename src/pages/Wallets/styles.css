@@ -12,6 +12,11 @@
     row-gap: 14px;
 }
 
+.wallet-switcher-container {
+    display: flex;
+    column-gap: 8px;
+}
+
 .wallets-header {
     display: flex;
     justify-content: space-between;
