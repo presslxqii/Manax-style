@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
 /* Variables */
 :root {
     --wallets-background-color: #0A0E16;
