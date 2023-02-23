@@ -33,7 +33,11 @@
     --wallet-amount-color: #667085;
     --wallet-hover-color: #171E2D;
     --wallet-opened-color: #0E1523;
-    --chart-period-color: #667085
+    --chart-period-color: #667085;
+    --status-done-color: #12B76A;
+    --status-done-background-color: #ECFDF31A;
+    --status-failed-color: #F04438;
+    --status-failed-background-color: #F044381A;
 }
 
 * {

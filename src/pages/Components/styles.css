@@ -91,7 +91,6 @@
 /* Table style */
 .table-container {
     .table {
-        text-transform: uppercase;
         width: 100%;
         border-collapse: collapse;
         font-size: 14px;
@@ -110,6 +109,7 @@
             }
 
             th {
+                text-transform: uppercase;
                 text-align: left;
                 font-weight: 500;
                 padding: 18px 0 18px 24px;
@@ -175,6 +175,26 @@
 
     .decrease {
         @mixin percent var(--percent-decrease-background-color), var(--percent-decrease-color), url("/src/assets/arrow-down.svg");
+    }
+}
+
+.status-container {
+    width: 54px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 16px;
+
+    &[data-status='done'] {
+        color: var(--status-done-color);
+        background-color: var(--status-done-background-color);
+    }
+
+    &[data-status='failed'] {
+        color: var(--status-failed-color);
+        background-color: var(--status-failed-background-color);
     }
 }
 
