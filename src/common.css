@@ -1,6 +1,7 @@
 /* Variables */
 :root {
     --wallets-background-color: #0A0E16;
+    --wallets-header-background-color: #0A0E16;
     --black-button-color: #0A0E16;
     --table-header: #0A0E16;
     --table-text-color: #FFFFFF80;
@@ -60,6 +61,8 @@ input {
 
 h1 {
     font-size: 30px;
+    font-weight: 400;
+    margin: 0;
 }
 
 button {

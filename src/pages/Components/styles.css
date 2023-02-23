@@ -17,20 +17,25 @@
     height: 56px;
 }
 
-.colored-medium-button {
+.colored-small-button {
     @extend .colored-button;
     font-size: 14px;
     padding: 10px 28px;
 }
 
 .black-button {
-    color: var(--text-button);
     background: var(--black-button-color);
+    color: var(--text-button);
     padding: 18px 22px;
     border-radius: 12px;
     font-size: 16px;
     box-shadow: var(--button-shadow);
     border: none;
+}
+
+.colored-medium-button {
+    @extend .colored-button;
+    padding: 18px 22px;
 }
 
 .tab {
