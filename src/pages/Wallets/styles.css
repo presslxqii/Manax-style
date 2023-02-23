@@ -9,6 +9,8 @@
 .currency-container {
     display: grid;
     row-gap: 23px;
+    place-content: flex-end;
+    margin-top: 20px;
 }
 
 .wallets-chart {
