@@ -1,423 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Wallets</title>
+	<meta charset="UTF-8">
+	<title>Wallets</title>
 </head>
 <body>
 <ul>
-    <a href="/">Main page</a>
+	<a href="/">Main page</a>
 </ul>
 
 <div class="wallets-header">
-    <h1>
-        Wallets
-    </h1>
-    <button class="colored-medium-button">
-        Add new
-    </button>
+	<h1>
+		Wallets
+	</h1>
+	<button class="colored-medium-button">
+		Add new
+	</button>
 </div>
-<div class="wallet-switcher-container">
-    <div class="wallet-switcher">
+
+<div class="currency-container">
+	<div class="currency-header">
+		<h1>
+			Monero
+		</h1>
+		<div class="wallet-switcher-container">
+			<div class="wallet-switcher">
         <span class="mode">
             Transfer
         </span>
-        <span class="mode">
+				<span class="mode">
             Withdrawal
         </span>
-    </div>
-    <button class="colored-close-button">
-        <img src="../../assets/cross-icon.svg" alt="cross">
-    </button>
-</div>
-
-<div class="wallets-chart">
-    <div class="title-chart">
-        <div class="amount">
-            0 9333 303.12 / $ 2 544.01
-        </div>
-        <div class="chart-period">
-    <span data-selected='true'>
+			</div>
+			<button class="colored-close-button">
+				<img src="../../assets/cross-icon.svg" alt="cross">
+			</button>
+		</div>
+	</div>
+	<div class="wallets-chart">
+		<div class="title-chart">
+			<div class="amount">
+				0 9333 303.12 / $ 2 544.01
+			</div>
+			<div class="chart-period">
+    <span data-selected="true">
         1 Y
     </span>
-            <span>
+				<span>
         6M
     </span>
-            <span>
+				<span>
         3M
     </span>
-            <span>
+				<span>
         1M
     </span>
-            <span>
+				<span>
         1W
     </span>
-            <span>
+				<span>
         1D
     </span>
-
-        </div>
-    </div>
-    <img src="../../assets/wallets-chart.svg" alt="chart">
+			
+			</div>
+		</div>
+		<img src="../../assets/wallets-chart.svg" alt="chart">
+	</div>
 </div>
 
 <div class="wallets-page">
-    <div>
-        <div class="wallets-container">
-            <div class="title-container">
-                <div class="title">
-                    Wallets
-                </div>
-                <button class="colored-small-button">
-                    Add new
-                </button>
-            </div>
-            <div class="wallets">
-                <section class="wallet">
-                    <div class="general-info">
-                        <div class="title">
-                            <div class="wallet-name">
-                                Trading wallet
-                            </div>
-                            <div class="hide">
-                                3
-                            </div>
-                        </div>
-                        <div class="text">
-                            Total
-                        </div>
-                        <div class="amount-container">
-                            <div class="amount">
-                                $6,421.10
-                            </div>
-                            <div class="percent-container">
-                                <div class="rise">
-                                    3.4
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="wallet">
-                    <div class="general-info">
-                        <div class="title">
-                            <div class="wallet-name">
-                                Funding wallet
-                            </div>
-                            <div class="hide">
-                                2
-                            </div>
-                        </div>
-                        <div class="text">
-                            Total
-                        </div>
-                        <div class="amount-container">
-                            <div class="amount">
-                                $40,206.20
-                            </div>
-                            <div class="percent-container">
-                                <div class="rise">
-                                    1.2
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    <div class="wallets-container">
-        <div class="title-container">
-            <div class="title">
-                Wallets
-            </div>
-            <button class="colored-small-button">
-                Add new
-            </button>
-        </div>
-        <div class="wallets">
-            <section class="wallet" data-opened='true'>
-                <div class="general-info">
-                    <div class="title">
-                        <div class="wallet-name">
-                            Funding wallet
-                        </div>
-                        <div class="open">
-                            2
-                        </div>
-                    </div>
-                    <div class="text">
-                        Total
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $40,206.20
-                        </div>
-                        <div class="percent-container">
-                            <div class="rise">
-                                1.2
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="currencies-container">
-                    <div class="title">
-                        <div class="currency-name">
-                            <img class="icon" src="../../assets/monero.png" alt="icon" />
-                            MONERO
-                        </div>
-                        <div class="go-to-currency">
-                            <img class="icon" src="../../assets/arrow-right.svg" alt="icon" />
-                        </div>
-                    </div>
-                    <div class="text">
-                        0 9333 303.12
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $ 2 544.01
-                        </div>
-                        <div class="percent-container">
-                            <div class="rise">
-                                3.4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="currencies-container">
-                    <div class="title">
-                        <div class="currency-name">
-                            <img class="icon" src="../../assets/litecoin.png" alt="icon" />
-                            LITECOIN
-                        </div>
-                        <div class="go-to-currency">
-                            <img class="icon" src="../../assets/arrow-right.svg" alt="icon" />
-                        </div>
-                    </div>
-                    <div class="text">
-                        0 9333 303.12
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $ 2 544.01
-                        </div>
-                        <div class="percent-container">
-                            <div class="decrease">
-                                1.8
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="wallet">
-                <div class="general-info">
-                    <div class="title">
-                        <div class="wallet-name">
-                            Trading wallet
-                        </div>
-                        <div class="hide">
-                            3
-                        </div>
-                    </div>
-                    <div class="text">
-                        Total
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $6,421.10
-                        </div>
-                        <div class="percent-container">
-                            <div class="rise">
-                                3.4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    <div class="wallets-container">
-        <div class="title-container">
-            <div class="title">
-                Wallets
-            </div>
-            <button class="colored-small-button">
-                Add new
-            </button>
-        </div>
-        <div class="wallets">
-            <section class="wallet" data-opened='true'>
-                <div class="general-info">
-                    <div class="title">
-                        <div class="wallet-name">
-                            Funding wallet
-                        </div>
-                        <div class="open">
-                            2
-                        </div>
-                    </div>
-                    <div class="text">
-                        Total
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $40,206.20
-                        </div>
-                        <div class="percent-container">
-                            <div class="rise">
-                                1.2
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="currencies-container">
-                    <div class="title">
-                        <div class="currency-name">
-                            <img class="icon" src="../../assets/monero.png" alt="icon" />
-                            MONERO
-                        </div>
-                        <div class="go-to-currency">
-                            <img class="icon" src="../../assets/arrow-right.svg" alt="icon" />
-                        </div>
-                    </div>
-                    <div class="text">
-                        0 9333 303.12
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $ 2 544.01
-                        </div>
-                        <div class="percent-container">
-                            <div class="rise">
-                                3.4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="currencies-container">
-                    <div class="title">
-                        <div class="currency-name">
-                            <img class="icon" src="../../assets/litecoin.png" alt="icon" />
-                            LITECOIN
-                        </div>
-                        <div class="go-to-currency">
-                            <img class="icon" src="../../assets/arrow-right.svg" alt="icon" />
-                        </div>
-                    </div>
-                    <div class="text">
-                        0 9333 303.12
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $ 2 544.01
-                        </div>
-                        <div class="percent-container">
-                            <div class="decrease">
-                                1.8
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="wallet" data-opened='true'>
-                <div class="general-info">
-                    <div class="title">
-                        <div class="wallet-name">
-                            Trading wallet
-                        </div>
-                        <div class="open">
-                            3
-                        </div>
-                    </div>
-                    <div class="text">
-                        Total
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $6,421.10
-                        </div>
-                        <div class="percent-container">
-                            <div class="rise">
-                                3.4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="currencies-container">
-                    <div class="title">
-                        <div class="currency-name">
-                            <img class="icon" src="../../assets/monero.png" alt="icon" />
-                            MONERO
-                        </div>
-                        <div class="go-to-currency">
-                            <img class="icon" src="../../assets/arrow-right.svg" alt="icon" />
-                        </div>
-                    </div>
-                    <div class="text">
-                        0 9333 303.12
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $ 2 544.01
-                        </div>
-                        <div class="percent-container">
-                            <div class="rise">
-                                3.4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="currencies-container">
-                    <div class="title">
-                        <div class="currency-name">
-                            <img class="icon" src="../../assets/litecoin.png" alt="icon" />
-                            LITECOIN
-                        </div>
-                        <div class="go-to-currency">
-                            <img class="icon" src="../../assets/arrow-right.svg" alt="icon" />
-                        </div>
-                    </div>
-                    <div class="text">
-                        0 9333 303.12
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $ 2 544.01
-                        </div>
-                        <div class="percent-container">
-                            <div class="decrease">
-                                1.8
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="currencies-container">
-                    <div class="title">
-                        <div class="currency-name">
-                            <img class="icon" src="../../assets/dash.png" alt="icon" />
-                            DASH
-                        </div>
-                        <div class="go-to-currency">
-                            <img class="icon" src="../../assets/arrow-right.svg" alt="icon" />
-                        </div>
-                    </div>
-                    <div class="text">
-                        0 9333 303.12
-                    </div>
-                    <div class="amount-container">
-                        <div class="amount">
-                            $ 2 544.01
-                        </div>
-                        <div class="percent-container">
-                            <div class="rise">
-                                3.4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
+	<div>
+		<div class="wallets-container">
+			<div class="title-container">
+				<div class="title">
+					Wallets
+				</div>
+				<button class="colored-small-button">
+					Add new
+				</button>
+			</div>
+			<div class="wallets">
+				<section class="wallet">
+					<div class="general-info">
+						<div class="title">
+							<div class="wallet-name">
+								Trading wallet
+							</div>
+							<div class="hide">
+								3
+							</div>
+						</div>
+						<div class="text">
+							Total
+						</div>
+						<div class="amount-container">
+							<div class="amount">
+								$6,421.10
+							</div>
+							<div class="percent-container">
+								<div class="rise">
+									3.4
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="wallet">
+					<div class="general-info">
+						<div class="title">
+							<div class="wallet-name">
+								Funding wallet
+							</div>
+							<div class="hide">
+								2
+							</div>
+						</div>
+						<div class="text">
+							Total
+						</div>
+						<div class="amount-container">
+							<div class="amount">
+								$40,206.20
+							</div>
+							<div class="percent-container">
+								<div class="rise">
+									1.2
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="wallets-container">
+		<div class="title-container">
+			<div class="title">
+				Wallets
+			</div>
+			<button class="colored-small-button">
+				Add new
+			</button>
+		</div>
+		<div class="wallets">
+			<section class="wallet" data-opened="true">
+				<div class="general-info">
+					<div class="title">
+						<div class="wallet-name">
+							Funding wallet
+						</div>
+						<div class="open">
+							2
+						</div>
+					</div>
+					<div class="text">
+						Total
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$40,206.20
+						</div>
+						<div class="percent-container">
+							<div class="rise">
+								1.2
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="currencies-container">
+					<div class="title">
+						<div class="currency-name">
+							<img class="icon" src="../../assets/monero.png" alt="icon"/>
+							MONERO
+						</div>
+						<div class="go-to-currency">
+							<img class="icon" src="../../assets/arrow-right.svg" alt="icon"/>
+						</div>
+					</div>
+					<div class="text">
+						0 9333 303.12
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$ 2 544.01
+						</div>
+						<div class="percent-container">
+							<div class="rise">
+								3.4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="currencies-container">
+					<div class="title">
+						<div class="currency-name">
+							<img class="icon" src="../../assets/litecoin.png" alt="icon"/>
+							LITECOIN
+						</div>
+						<div class="go-to-currency">
+							<img class="icon" src="../../assets/arrow-right.svg" alt="icon"/>
+						</div>
+					</div>
+					<div class="text">
+						0 9333 303.12
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$ 2 544.01
+						</div>
+						<div class="percent-container">
+							<div class="decrease">
+								1.8
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="wallet">
+				<div class="general-info">
+					<div class="title">
+						<div class="wallet-name">
+							Trading wallet
+						</div>
+						<div class="hide">
+							3
+						</div>
+					</div>
+					<div class="text">
+						Total
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$6,421.10
+						</div>
+						<div class="percent-container">
+							<div class="rise">
+								3.4
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="wallets-container">
+		<div class="title-container">
+			<div class="title">
+				Wallets
+			</div>
+			<button class="colored-small-button">
+				Add new
+			</button>
+		</div>
+		<div class="wallets">
+			<section class="wallet" data-opened="true">
+				<div class="general-info">
+					<div class="title">
+						<div class="wallet-name">
+							Funding wallet
+						</div>
+						<div class="open">
+							2
+						</div>
+					</div>
+					<div class="text">
+						Total
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$40,206.20
+						</div>
+						<div class="percent-container">
+							<div class="rise">
+								1.2
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="currencies-container">
+					<div class="title">
+						<div class="currency-name">
+							<img class="icon" src="../../assets/monero.png" alt="icon"/>
+							MONERO
+						</div>
+						<div class="go-to-currency">
+							<img class="icon" src="../../assets/arrow-right.svg" alt="icon"/>
+						</div>
+					</div>
+					<div class="text">
+						0 9333 303.12
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$ 2 544.01
+						</div>
+						<div class="percent-container">
+							<div class="rise">
+								3.4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="currencies-container">
+					<div class="title">
+						<div class="currency-name">
+							<img class="icon" src="../../assets/litecoin.png" alt="icon"/>
+							LITECOIN
+						</div>
+						<div class="go-to-currency">
+							<img class="icon" src="../../assets/arrow-right.svg" alt="icon"/>
+						</div>
+					</div>
+					<div class="text">
+						0 9333 303.12
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$ 2 544.01
+						</div>
+						<div class="percent-container">
+							<div class="decrease">
+								1.8
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="wallet" data-opened="true">
+				<div class="general-info">
+					<div class="title">
+						<div class="wallet-name">
+							Trading wallet
+						</div>
+						
+							<div class="open">
+							3
+						</div>
+					</div>
+					<div class="text">
+						Total
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$6,421.10
+						</div>
+						<div class="percent-container">
+							<div class="rise">
+								3.4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="currencies-container">
+					<div class="title">
+						<div class="currency-name">
+							<img class="icon" src="../../assets/monero.png" alt="icon"/>
+							MONERO
+						</div>
+						<div class="go-to-currency">
+							<img class="icon" src="../../assets/arrow-right.svg" alt="icon"/>
+						</div>
+					</div>
+					<div class="text">
+						0 9333 303.12
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$ 2 544.01
+						</div>
+						<div class="percent-container">
+							<div class="rise">
+								3.4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="currencies-container">
+					<div class="title">
+						<div class="currency-name">
+							<img class="icon" src="../../assets/litecoin.png" alt="icon"/>
+							LITECOIN
+						</div>
+						<div class="go-to-currency">
+							<img class="icon" src="../../assets/arrow-right.svg" alt="icon"/>
+						</div>
+					</div>
+					<div class="text">
+						0 9333 303.12
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$ 2 544.01
+						</div>
+						<div class="percent-container">
+							<div class="decrease">
+								1.8
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="currencies-container">
+					<div class="title">
+						<div class="currency-name">
+							<img class="icon" src="../../assets/dash.png" alt="icon"/>
+							DASH
+						</div>
+						<div class="go-to-currency">
+							<img class="icon" src="../../assets/arrow-right.svg" alt="icon"/>
+						</div>
+					</div>
+					<div class="text">
+						0 9333 303.12
+					</div>
+					<div class="amount-container">
+						<div class="amount">
+							$ 2 544.01
+						</div>
+						<div class="percent-container">
+							<div class="rise">
+								3.4
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
 </div>
 </body>
 </html>

@@ -6,10 +6,20 @@
     margin-top: 20px;
 }
 
+.currency-container {
+    display: grid;
+    row-gap: 23px;
+}
+
 .wallets-chart {
     width: fit-content;
     display: grid;
     row-gap: 14px;
+}
+
+.currency-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .wallet-switcher-container {
