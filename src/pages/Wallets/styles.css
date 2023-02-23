@@ -1,3 +1,9 @@
+.wallets-page {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
 .wallets-container {
     background-color: var(--wallets-background-color);
     width: 586px;
@@ -20,52 +26,105 @@
         row-gap: 24px;
 
         .wallet {
-            padding: 16px 16px 24px;
-            border: var(--wallet-border);
             border-radius: 12px;
-            display: grid;
-            row-gap: 8px;
+            border: var(--wallet-border);
 
-            .text {
-                font-size: 14px;
-                color: var(--wallet-text-color);
+            &[data-opened='true'] {
+                background-color: var(--wallet-opened-color);
             }
 
-            .title {
-                display: flex;
-                justify-content: space-between;
+            .general-info {
+                padding: 16px 16px 24px;
+                display: grid;
+                row-gap: 8px;
 
-                .wallet-name {
-                    font-weight: 500;
-                    font-size: 16px;
-
+                &:hover {
+                    background-color: var(--wallet-hover-color);
                 }
 
-                .hide {
-                    &::after {
-                        content: url("/src/assets/expand-arrow.svg");
+                .text {
+                    font-size: 14px;
+                    color: var(--wallet-text-color);
+                }
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .wallet-name {
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+
+                    .hide {
+                        &::after {
+                            content: url("/src/assets/expand-arrow.svg");
+                            cursor: pointer;
+                        }
+                    }
+
+                    .open {
+                        &::after {
+                            content: url("/src/assets/collapse-arrow.svg");
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .amount-container {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .amount {
+                        font-size: 30px;
+                        color: var(--wallet-amount-color);
+                    }
+                }
+            }
+
+            .currencies-container {
+                padding: 16px;
+                border-top: var(--wallet-border);
+                display: grid;
+                row-gap: 9px;
+
+
+                .amount-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .amount {
+                        font-size: 14px;
+                        color: var(--wallet-amount-color);
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--wallet-hover-color);
+                }
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .currency-name {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 6px;
+
+                        .icon {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+                    .go-to-currency {
                         cursor: pointer;
                     }
                 }
 
-                .open {
-                    &::after {
-                        content: url("/src/assets/collapse-arrow.svg");
-                        cursor: pointer;
-                    }
-                }
             }
-
-            .amount-container {
-                display: flex;
-                justify-content: space-between;
-
-                .amount {
-                    font-size: 30px;
-                    color: var(--wallet-amount-color);
-                }
-            }
-
         }
     }
 }
