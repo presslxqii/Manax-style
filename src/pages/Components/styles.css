@@ -8,6 +8,7 @@
     border: none;
     line-height: 20px;
     cursor: pointer;
+    padding: 16px 24px;
 }
 
 .colored-big-button {
@@ -21,7 +22,7 @@
 .colored-small-button {
     @extend .colored-button;
     font-size: 14px;
-    padding: 10px 28px;
+    padding: 16px 24px;
 }
 
 .colored-close-button {
@@ -33,16 +34,11 @@
 .black-button {
     background: var(--black-button-color);
     color: var(--text-button);
-    padding: 18px 22px;
+    padding: 16px 24px;
     border-radius: 12px;
     font-size: 16px;
     box-shadow: var(--button-shadow);
     border: none;
-}
-
-.colored-medium-button {
-    @extend .colored-button;
-    padding: 18px 22px;
 }
 
 .tab {
