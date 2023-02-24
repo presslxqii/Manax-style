@@ -2,12 +2,79 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Wallets</title>
+	<title>Transfer</title>
 </head>
 <body>
 <ul>
 	<a href="/">Main page</a>
+	<a href="/wallets.html">Wallets</a>
 </ul>
+
+<div class="transfer-popup-container">
+	<div class="center-container">
+		<div class="wallets-popup-container">
+			<div class="title-container">
+				<h1>
+					Transfer
+				</h1>
+				<div class="close" onclick="parent.location='wallets.html'">
+					<img src="../../../assets/cross-icon.svg" alt="img">
+				</div>
+			</div>
+			<div class="transfers-container">
+				<section class="transfer-container">
+					<div class="transfer-title">From</div>
+					<div class="currencies-container">
+						<div class="currency-name">
+							<img class="icon" src="../../../assets/monero.png" alt="icon"/>
+							Monero
+						</div>
+						<span>
+						12.0
+					</span>
+					</div>
+					<div class="amount-container">
+					<span>
+						0 9333 303.12 / $ 2 544.01
+					</span>
+						<span>
+						$ 544.01
+					</span>
+					</div>
+				</section>
+				<section class="transfer-container">
+					<div class="transfer-title">To</div>
+					<div class="currencies-container">
+						<div class="currency-name">
+							<img class="icon" src="../../assets/dash.png" alt="icon"/>
+							Dash
+						</div>
+						<span>
+						3688.944
+					</span>
+					</div>
+					<div class="amount-container">
+					<span>
+						0 9333 303.12 / $ 2 544.01
+					</span>
+						<span>
+						$ 512.34
+					</span>
+					</div>
+				</section>
+			</div>
+			<span class="transfer-fee">Fee: 001,22 MNR</span>
+			<div class="buttons-container">
+				<button class="colored-small-button">
+					Continue
+				</button>
+				<span class="text-chevron-right">
+					Connect wallet
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="wallets-page">
 	<div class="wallets-side">
@@ -45,7 +112,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="currencies-container" onclick="parent.location='transfer.html'">
+					<div class="currencies-container">
 						<div class="title">
 							<div class="currency-name">
 								<img class="icon" src="../../assets/monero.png" alt="icon"/>

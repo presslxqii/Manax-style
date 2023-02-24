@@ -9,6 +9,10 @@
     line-height: 20px;
     cursor: pointer;
     padding: 16px 24px;
+
+    &:disabled {
+        background: var(--colored-button-disabled-color);
+    }
 }
 
 .colored-big-button {
@@ -337,6 +341,7 @@
                 padding: 16px 16px 24px;
                 display: grid;
                 row-gap: 8px;
+                cursor: pointer;
 
                 &:hover {
                     background-color: var(--wallet-hover-color);
@@ -383,6 +388,7 @@
             }
 
             .currencies-container {
+                cursor: pointer;
                 padding: 16px;
                 border-top: var(--wallet-border);
                 display: grid;
@@ -439,3 +445,101 @@
     border-radius: 24px;
 }
 
+.wallets-popup-container {
+    background-color: var(--wallets-popup-container);
+    width: 586px;
+    box-shadow: var(--popup-shadow);
+    padding: 36px 24px 24px;
+    border-radius: 24px;
+    display: grid;
+
+    .title-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+
+        .close {
+            cursor: pointer;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    .transfer-fee {
+        margin-top: 8px;
+        line-height: 20px;
+        color: var(--transfer-currency-account);
+        font-size: 12px;
+    }
+
+    .buttons-container {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .transfers-container {
+        display: grid;
+        row-gap: 16px;
+    }
+
+    .transfer-container {
+        border: var(--wallet-border);
+        padding: 16px;
+        border-radius: 12px;
+        display: grid;
+        row-gap: 16px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--transfer-currency-hover);
+        }
+
+        .transfer-title {
+            font-size: 16px;
+        }
+
+        .currencies-container {
+            font-size: 26px;
+            color: var(--transfer-currency-account);
+            display: flex;
+            justify-content: space-between;
+
+            .currency-name {
+                display: flex;
+                align-items: center;
+                column-gap: 6px;
+
+                .icon {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        .amount-container {
+            display: flex;
+            font-size: 14px;
+            justify-content: space-between;
+            color: var(--transfer-currency-account);
+        }
+    }
+
+}
+
+.text-chevron-right {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    cursor: pointer;
+
+    &::after {
+        content: url("../../assets/chevron-right.svg");
+        width: 12px;
+        height: 15px;
+    }
+}

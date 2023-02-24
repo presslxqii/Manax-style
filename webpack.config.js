@@ -8,7 +8,8 @@ module.exports = {
 	entry: {
 		components: './src/pages/Components/index.js',
 		trade: './src/pages/Trade/index.js',
-		wallets: './src/pages/Wallets/index.js'
+		wallets: './src/pages/Wallets/index.js',
+		transfer: './src/pages/Wallets/Transfer/index.js'
 	},
 	mode: 'development',
 	output: {
@@ -46,6 +47,11 @@ module.exports = {
 			filename: 'wallets.html',
 			template: 'src/pages/Wallets/index.html',
 			chunks: ['wallets'],
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'transfer.html',
+			template: 'src/pages/Wallets/Transfer/index.html',
+			chunks: ['transfer'],
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].bundle.css'

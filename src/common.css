@@ -12,6 +12,7 @@
     --table-text-color: #FFFFFF80;
     --table-hover-color: #171E2D;
     --colored-button-color: linear-gradient(123.32deg, #FF9500 51.94%, #F8359E 115.67%);
+    --colored-button-disabled-color: #111928;
     --button-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
     --secondary-color: #6c757d;
     --text-color: #FFF;
@@ -38,6 +39,11 @@
     --status-done-background-color: #ECFDF31A;
     --status-failed-color: #F04438;
     --status-failed-background-color: #F044381A;
+    --wallets-popup-container: #0A0E16;
+    --popup-shadow: 0px 1px 44px rgba(0, 0, 0, 0.25);
+    --transfer-currency-account: #667085;
+    --transfer-currency-hover: #171F2F;
+    --popup-background-color: #0E1725B3;
 }
 
 * {
