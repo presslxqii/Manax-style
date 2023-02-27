@@ -28,32 +28,9 @@
     justify-content: space-between;
 
     .amount {
+        font-weight: 600;
         font-size: 16px;
         color: var(--wallet-amount-color);
-    }
-
-    .chart-period {
-        display: flex;
-        column-gap: 8px;
-
-        span {
-            font-size: 14px;
-            width: 44px;
-            height: 36px;
-            color: var(--chart-period-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-
-            &[data-selected='true'] {
-                color: var(--text-color);
-            }
-
-            &:hover {
-                color: var(--text-color);
-            }
-        }
     }
 }
 

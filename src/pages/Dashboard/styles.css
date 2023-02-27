@@ -1,0 +1,26 @@
+.dashboard-page-container {
+    display: grid;
+    row-gap: 24px;
+
+    .dashboard-container {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .dashboard-items-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        width: fit-content;
+
+        .table {
+            display: grid;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            table {
+                display: table;
+            }
+        }
+    }
+}

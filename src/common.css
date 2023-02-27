@@ -44,6 +44,12 @@
     --transfer-currency-account: #667085;
     --transfer-currency-hover: #171F2F;
     --popup-background-color: #0E1725B3;
+    --dashboard-item-conntainer-backgroud-color: #0A0E16;
+    --dashboard-item-period-backgroud-color: #171E2D;
+    --dashboard-item-period-color: #667085;
+    --dashboard-item-trades-color: #98A2B3;
+    --gray-button-background-color: #66708533;
+    --dashboard-info-text-color: #667085;
 }
 
 * {

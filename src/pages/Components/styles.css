@@ -29,6 +29,11 @@
     padding: 16px 24px;
 }
 
+.gray-button {
+    @extend .colored-small-button;
+    background: var(--gray-button-background-color);
+}
+
 .colored-close-button {
     @extend .colored-button;
     padding: 8px;
@@ -277,6 +282,19 @@
     justify-content: space-between;
 }
 
+
+/* Amount */
+.amount-container {
+    display: flex;
+    justify-content: space-between;
+
+    .amount {
+        font-weight: 600;
+        font-size: 30px;
+        color: var(--wallet-amount-color);
+    }
+}
+
 /* Switcher */
 .wallet-switcher {
     display: flex;
@@ -375,19 +393,10 @@
                         }
                     }
                 }
-
-                .amount-container {
-                    display: flex;
-                    justify-content: space-between;
-
-                    .amount {
-                        font-size: 30px;
-                        color: var(--wallet-amount-color);
-                    }
-                }
             }
 
             .currencies-container {
+                font-weight: 500;
                 cursor: pointer;
                 padding: 16px;
                 border-top: var(--wallet-border);
@@ -435,14 +444,26 @@
     }
 }
 
-.wallets-header {
+.general-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--wallets-header-background-color);
     width: 100%;
     padding: 24px;
     border-radius: 24px;
+
+}
+
+.wallets-header {
+    @extend .general-header;
+    background-color: var(--wallets-header-background-color);
+}
+
+.dashboard-header {
+    @extend .general-header;
+    background: url('../../assets/dashboard-background-header.png');
+    background-position-x: center;
+    background-position-y: top;
 }
 
 .wallets-popup-container {
@@ -504,6 +525,7 @@
         }
 
         .currencies-container {
+            font-weight: 500;
             font-size: 26px;
             color: var(--transfer-currency-account);
             display: flex;
@@ -541,5 +563,106 @@
         content: url("../../assets/chevron-right.svg");
         width: 12px;
         height: 15px;
+    }
+}
+
+/* Period */
+.period-container {
+    display: flex;
+    column-gap: 8px;
+
+    span {
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--chart-period-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 6px;
+
+        &[data-disabled="true"] {
+            color: var(--dashboard-item-period-color);
+            background-color: var(--dashboard-item-period-backgroud-color);
+
+            &:hover {
+                color: var(--dashboard-item-period-color);
+            }
+        }
+
+        &[data-selected='true'] {
+            color: var(--text-color);
+        }
+
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+}
+
+/* Dashboard items */
+.dashboard-item-container {
+    grid-template-rows: auto auto 1fr;
+    background-color: var(--dashboard-item-conntainer-backgroud-color);
+    display: grid;
+    row-gap: 16px;
+    border-radius: 24px;
+    width: 351px;
+    height: 270px;
+    padding: 24px;
+
+    .name-item {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .total-container {
+        font-size: 14px;
+        color: var(--dashboard-item-trades-color);
+        line-height: 32px;
+        font-weight: 500;
+    }
+
+    .buttons-container {
+        align-self: flex-end;
+    }
+
+    .text-container {
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 14px;
+        color: var(--dashboard-item-trades-color);
+    }
+}
+
+.dashboard-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+/* Dashboard info */
+.info-container {
+    display: grid;
+    border-radius: 24px;
+    width: 351px;
+    overflow: hidden;
+    row-gap: 1px;
+
+    .info-item {
+        padding: 24px;
+        background-color: var(--dashboard-item-conntainer-backgroud-color);
+        color: var(--dashboard-info-text-color);
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .img-container {
+            width: 40px;
+            height: 40px;
+        }
     }
 }
