@@ -1,6 +1,12 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
 .dashboard-page-container {
     display: grid;
     row-gap: 24px;
+    width: fit-content;
 
     .dashboard-container {
         display: grid;
