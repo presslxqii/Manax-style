@@ -666,3 +666,9 @@
         }
     }
 }
+
+/* Tabs container */
+.tabs-container {
+    display: flex;
+    column-gap: 6px;
+}

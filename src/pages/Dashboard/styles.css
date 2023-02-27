@@ -3,8 +3,9 @@
     row-gap: 24px;
 
     .dashboard-container {
-        display: flex;
+        display: grid;
         justify-content: center;
+        row-gap: 8px;
     }
 
 
