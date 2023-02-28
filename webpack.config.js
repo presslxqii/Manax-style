@@ -11,7 +11,8 @@ module.exports = {
 		wallets: './src/pages/Wallets/index.js',
 		transfer: './src/pages/Wallets/Transfer/index.js',
 		dashboard: './src/pages/Dashboard/index.js',
-		bots: './src/pages/Bots/index.js'
+		bots: './src/pages/Bots/index.js',
+		emptyBots: './src/pages/Bots/EmptyBots/index.js'
 	},
 	mode: 'development',
 	output: {
@@ -64,6 +65,11 @@ module.exports = {
 			filename: 'bots.html',
 			template: 'src/pages/Bots/index.html',
 			chunks: ['bots'],
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'empty-bots.html',
+			template: 'src/pages/Bots/EmptyBots/index.html',
+			chunks: ['emptyBots'],
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].bundle.css'
