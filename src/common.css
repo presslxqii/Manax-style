@@ -50,6 +50,11 @@
     --dashboard-item-trades-color: #98A2B3;
     --gray-button-background-color: #66708533;
     --dashboard-info-text-color: #667085;
+    --verifide-label-color: #12B76A;
+    --options-text-color: #667085;
+    --options-background-hover-color: #171E2D;
+    --separator-color: #1A2232;
+    --placeholder-color: #667085;
 }
 
 * {

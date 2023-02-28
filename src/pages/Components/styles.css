@@ -17,7 +17,7 @@
     padding: 16px 24px;
 
     &:disabled {
-        background: var(--colored-button-disabled-color);
+        opacity: 0.1;
     }
 }
 
@@ -32,7 +32,7 @@
 .colored-small-button {
     @extend .colored-button;
     font-size: 14px;
-    padding: 16px 24px;
+    padding: 10px 24px;
 }
 
 .gray-button {
@@ -615,6 +615,11 @@
     }
 }
 
+.name-item {
+    font-weight: 500;
+    font-size: 16px;
+}
+
 /* Dashboard items */
 .dashboard-item-container {
     grid-template-rows: auto auto 1fr;
@@ -625,11 +630,6 @@
     width: 351px;
     height: 270px;
     padding: 24px;
-
-    .name-item {
-        font-weight: 500;
-        font-size: 16px;
-    }
 
     .total-container {
         font-size: 14px;
@@ -694,16 +694,139 @@
 }
 
 /* Boats container */
-.boats-container {
+.create-bots-container {
     display: grid;
     width: 351px;
     background-color: var(--dashboard-item-conntainer-backgroud-color);
     border-radius: 24px;
     padding: 24px;
     row-gap: 22px;
+}
+
+.verified-label-container {
+    border: 1px solid var(--verifide-label-color);
+    color: var(--verifide-label-color);
+    padding: 4px 8px;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 16px;
+    line-height: 20px;
+}
+
+/* Deposit container */
+.deposit-container {
+    @extend .create-bots-container;
+    row-gap: 20px;
+
+    .colored-small-button {
+        width: 100%;
+    }
 
     .name-item {
-        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .buttons-container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 11px;
+    }
+}
+
+/* Investment container */
+.investment-container {
+    width: fit-content;
+    display: grid;
+    row-gap: 22px;
+    background-color: var(--dashboard-item-conntainer-backgroud-color);
+    border-radius: 24px;
+    padding: 24px;
+
+    .title {
+
+    }
+
+    .inputs-container {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    .dropdown-container {
+        display: flex;
+        column-gap: 12px;
+        width: 180px;
+        background-color: var(--input-background-color);
+        border-radius: 8px;
+        line-height: 24px;
+        padding: 8px 14px;
+        color: var(--options-text-color);
+
+
+        input {
+            width: 1px;
+            height: 1px;
+            display: inline-block;
+            position: absolute;
+            opacity: 0.01;
+        }
+    }
+}
+
+.investment-options-container {
+    border-radius: 8px;
+    background-color: var(--dashboard-item-conntainer-backgroud-color);
+    width: 375px;
+
+    .title {
+        font-weight: 400;
         font-size: 16px;
+        color: var(--text-color);
+        padding: 10px 14px;
+    }
+
+    .section {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 14px;
+        color: var(--options-text-color);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--options-background-hover-color);
+        }
+
+        input {
+            width: 1px;
+            height: 1px;
+            display: inline-block;
+            position: absolute;
+            opacity: 0.01;
+        }
+    }
+
+    .separator {
+        width: 100%;
+        border: 1px solid var(--separator-color);
+        display: flex;
+    }
+}
+
+/* Text input */
+.text-input {
+    background-color: var(--input-background-color);
+    border-radius: 8px;
+    line-height: 24px;
+    padding: 8px 14px;
+    color: var(--text-color);
+    outline: none;
+    -webkit-appearance: none;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+
+    &::placeholder {
+        color: var(--placeholder-color);
     }
 }

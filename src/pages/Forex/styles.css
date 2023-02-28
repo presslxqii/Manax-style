@@ -1,0 +1,5 @@
+.forex-page-container {
+    display: grid;
+    row-gap: 24px;
+    width: fit-content;
+}

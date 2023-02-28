@@ -12,7 +12,8 @@ module.exports = {
 		transfer: './src/pages/Wallets/Transfer/index.js',
 		dashboard: './src/pages/Dashboard/index.js',
 		bots: './src/pages/Bots/index.js',
-		emptyBots: './src/pages/Bots/EmptyBots/index.js'
+		emptyBots: './src/pages/Bots/EmptyBots/index.js',
+		forex: './src/pages/Forex/index.js'
 	},
 	mode: 'development',
 	output: {
@@ -65,6 +66,11 @@ module.exports = {
 			filename: 'bots.html',
 			template: 'src/pages/Bots/index.html',
 			chunks: ['bots'],
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'forex.html',
+			template: 'src/pages/Forex/index.html',
+			chunks: ['forex'],
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'empty-bots.html',
