@@ -1,0 +1,16 @@
+.bots-page-container {
+    display: grid;
+    row-gap: 24px;
+    width: fit-content;
+
+    .bots-container {
+        display: grid;
+        gap: 24px;
+
+        .table {
+            grid-row: 1 / 4;
+            grid-column: 2 / 2;
+            width: 724px;
+        }
+    }
+}

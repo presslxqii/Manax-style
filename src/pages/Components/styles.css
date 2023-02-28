@@ -1,3 +1,9 @@
+/* Center */
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* Chart of table */
 .colored-button {
     color: var(--text-button);
@@ -101,6 +107,14 @@
         font-size: 14px;
         color: var(--table-text-color);
         font-weight: 500;
+
+        .fixed-column {
+            width: 151px;
+        }
+
+        .flex-column {
+            min-width: 120px;
+        }
 
         tr {
             &:not(:first-child) {
@@ -664,6 +678,12 @@
             width: 40px;
             height: 40px;
         }
+
+        .amount {
+            color: var(--dashboard-info-text-color);
+            font-weight: 600;
+            font-size: 26px;
+        }
     }
 }
 
@@ -671,4 +691,19 @@
 .tabs-container {
     display: flex;
     column-gap: 6px;
+}
+
+/* Boats container */
+.boats-container {
+    display: grid;
+    width: 351px;
+    background-color: var(--dashboard-item-conntainer-backgroud-color);
+    border-radius: 24px;
+    padding: 24px;
+    row-gap: 22px;
+
+    .name-item {
+        font-weight: 500;
+        font-size: 16px;
+    }
 }

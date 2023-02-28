@@ -10,7 +10,8 @@ module.exports = {
 		trade: './src/pages/Trade/index.js',
 		wallets: './src/pages/Wallets/index.js',
 		transfer: './src/pages/Wallets/Transfer/index.js',
-		dashboard: './src/pages/Dashboard/index.js'
+		dashboard: './src/pages/Dashboard/index.js',
+		bots: './src/pages/Bots/index.js'
 	},
 	mode: 'development',
 	output: {
@@ -58,6 +59,11 @@ module.exports = {
 			filename: 'transfer.html',
 			template: 'src/pages/Wallets/Transfer/index.html',
 			chunks: ['transfer'],
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'bots.html',
+			template: 'src/pages/Bots/index.html',
+			chunks: ['bots'],
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].bundle.css'
