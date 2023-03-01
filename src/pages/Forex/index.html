@@ -3,6 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Forex</title>
+	<script>
+		window.addEventListener('load', (e) => {
+			const walletSelector = document.getElementById('wallet-selector');
+			const walletDropdown = document.getElementById('wallet-dropdown');
+			walletSelector.addEventListener('click', (e) => {
+				e.preventDefault();
+				e.stopPropagation();
+				if (e.target === e.currentTarget) {
+					walletDropdown.style.display = 'block';
+				}
+			})
+			
+			document.addEventListener('click', function() {
+				walletDropdown.style.display = 'none';
+			});
+		})
+	</script>
 </head>
 <body>
 <ul>
@@ -19,8 +36,7 @@
 				Wallets
 			</button>
 		</div>
-		
-		<div>
+		<div class="forex-container">
 			<div class="deposit-container">
 				<div class="name-item">
 					Janet
@@ -37,7 +53,6 @@
 					</button>
 				</div>
 			</div>
-			
 			<div class="info-container">
 				<div class="info-item">
 					Forex Balance
@@ -54,6 +69,179 @@
 				<div class="info-item">
 					Total Investment
 					<span class="amount">$46,206</span>
+				</div>
+			</div>
+			<div class="investment-container">
+				<div class="name-item">
+					Investment
+				</div>
+				<div class="inputs-container">
+				<span class="dropdown-container" id="wallet-selector">
+					<input type="radio" id="default-wallet">
+					<label for="default-wallet">Select a wallet</label>
+					
+					<div class="options-container" id="wallet-dropdown">
+						<div class="investment-options-container">
+							<span>
+								<div class="title">
+									Trading wallet
+								</div>
+								<div class="section" data-checked="checked">
+									<input type="radio" checked="checked" value="Monero" id="trading-monero">
+									<label for="trading-monero">Monero</label>
+									<span>0.0983833</span>
+								</div>
+								<div class="section">
+									<input type="radio" value="Litecoin" id="trading-litecoin">
+									<label for="trading-litecoin">Litecoin</label>
+									<span>94877.0001</span>
+								</div>
+								<div class="section">
+									<input type="radio" value="Dash" id="trading-dash">
+									<label for="trading-dash">Dash</label>
+									<span>94877.0001</span>
+								</div>
+							</span>
+							<span class="separator"></span>
+							<span>
+								<div class="title">
+									Funding wallet
+								</div>
+								<div class="section">
+									<input type="radio" value="Monero" id="funding-monero">
+									<label for="funding-monero">Monero</label>
+									<span>0.0983833</span>
+								</div>
+								<div class="section">
+									<input type="radio" value="Dash" id="funding-dash">
+									<label for="funding-dash">Dash</label>
+									<span>94877.0001</span>
+								</div>
+							</span>
+						</div>
+						<div class="background-options"></div>
+					</div>
+                </span>
+					<span class="dropdown-container">
+					<input type="radio" checked="checked" id="default-plan">
+					<label for="default-plan">Select a wallet</label>
+                </span>
+					<input class="text-input" type="text" placeholder="Amount">
+					<button class="colored-small-button">
+						Start
+					</button>
+				</div>
+			</div>
+			<div class="table">
+				<div class="table-container">
+					<table class="table">
+						<tr>
+							<th class="flex-column">TYPE</th>
+							<th class="flex-column">DATE</th>
+							<th class="flex-column">TIMESTAMP</th>
+							<th class="fixed-column">STATUS</th>
+						</tr>
+						<tr>
+							<td>Withdraw</td>
+							<td>2023, December 12</td>
+							<td>23:12:01</td>
+							<td>
+								<div class="status-container" data-status="done">
+									Confirmed
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Deposit</td>
+							<td>2023, December 12</td>
+							<td>13:22:01</td>
+							<td>
+								<div class="status-container" data-status="done">
+									Confirmed
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Withdraw</td>
+							<td>2023, December 12</td>
+							<td>23:22:01</td>
+							<td>
+								<div class="status-container" data-status="pending">
+									Pending
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Deposit</td>
+							<td>2023, December 11</td>
+							<td>23:22:01</td>
+							<td>
+								<div class="status-container" data-status="pending">
+									Pending
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Deposit</td>
+							<td>2023, December 11</td>
+							<td>13:22:01</td>
+							<td>
+								<div class="status-container" data-status="pending">
+									Pending
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Withdraw</td>
+							<td>2023, December 10</td>
+							<td>01:12:01</td>
+							<td>
+								<div class="status-container" data-status="done">
+									Confirmed
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Withdraw</td>
+							<td>2023, December 10</td>
+							<td>01:12:01</td>
+							<td>
+								<div class="status-container" data-status="done">
+									Confirmed
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Withdraw</td>
+							<td>2023, December 9</td>
+							<td>01:12:01</td>
+							<td>
+								<div class="status-container" data-status="done">
+									Confirmed
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Withdraw</td>
+							<td>2023, December 8</td>
+							<td>01:12:01</td>
+							<td>
+								<div class="status-container" data-status="done">
+									Confirmed
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Withdraw</td>
+							<td>2023, December 8</td>
+							<td>01:11:01</td>
+							<td>
+								<div class="status-container" data-status="done">
+									Confirmed
+								</div>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
