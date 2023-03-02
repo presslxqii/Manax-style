@@ -28,6 +28,12 @@
         }
     }
 
+    .wallets-header-popup {
+        position: absolute;
+        right: 0;
+        margin-top: 7px;
+        display: none;
+    }
 }
 
 

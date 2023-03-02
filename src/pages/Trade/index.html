@@ -3,6 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Trade</title>
+	<script>
+		window.addEventListener('load', (e) => {
+			const walletButton = document.getElementById('wallets-button');
+			const walletEl = document.getElementById('wallets-el');
+			walletButton.addEventListener('click', (e) => {
+				e.preventDefault();
+				e.stopPropagation();
+				if (e.target === e.currentTarget) {
+					walletEl.style.display = 'block';
+				}
+			})
+			
+			document.addEventListener('click', function() {
+				walletEl.style.display = 'none';
+			});
+		})
+	</script>
 </head>
 <body>
 <ul>
@@ -12,7 +29,76 @@
 <div class="trade-container">
     <div class="trade-header">
         <div class="first-section">
-            <button class="black-button">Wallets</button>
+            <button class="black-button" id="wallets-button">Wallets</button>
+	        <div class="wallets-header-popup" id="wallets-el">
+		        <div class="wallets-header-popup-container">
+			        <div class="wallets-container">
+				        <section class="wallet">
+					        <div class="general-info">
+						        <div class="title">
+							        <div class="wallet-name">
+								        Trading wallet
+							        </div>
+							        <div class="hide">
+								        3
+							        </div>
+						        </div>
+						        <div class="text">
+							        Total
+						        </div>
+						        <div class="amount-container">
+							        <div class="amount">
+								        $6,421.10
+							        </div>
+							        <div class="percent-container">
+								        <div class="rise">
+									        3.4
+								        </div>
+							        </div>
+						        </div>
+					        </div>
+				        </section>
+				        <section class="wallet">
+					        <div class="general-info">
+						        <div class="title">
+							        <div class="wallet-name">
+								        Funding wallet
+							        </div>
+							        <div class="hide">
+								        2
+							        </div>
+						        </div>
+						        <div class="text">
+							        Total
+						        </div>
+						        <div class="amount-container">
+							        <div class="amount">
+								        $40,206.20
+							        </div>
+							        <div class="percent-container">
+								        <div class="rise">
+									        1.2
+								        </div>
+							        </div>
+						        </div>
+					        </div>
+				        </section>
+				        <section class="wallet">
+					        <div class="personal-wallet-container">
+						        <div class="wallet-name">
+							        Personal wallet
+						        </div>
+						        <div class="button-container">
+							        <div class="colored-small-button">
+								        Connect
+							        </div>
+						        </div>
+					        </div>
+				        </section>
+			        </div>
+		        </div>
+		        <div class="popup-background"></div>
+	        </div>
         </div>
         <h1 class="header-text">Welcome back, Jannet &#x1F60A;</h1>
         <div>
