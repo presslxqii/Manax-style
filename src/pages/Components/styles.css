@@ -1061,8 +1061,7 @@
     }
 }
 
-/* test component */
-
+/* Connect wallet */
 .step {
     position: relative;
 
@@ -1114,7 +1113,6 @@
     }
 }
 
-
 .long-line {
     @extend .short-line;
 
@@ -1124,5 +1122,28 @@
 }
 
 .step:last-child .circle:after {
+    display: none;
+}
+
+/* Popup */
+.popup-container {
+    background-color: var(--popup-background-color);
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    .center-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Display none */
+
+.none {
     display: none;
 }

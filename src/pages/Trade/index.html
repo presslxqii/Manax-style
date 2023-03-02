@@ -7,6 +7,10 @@
 		window.addEventListener('load', (e) => {
 			const walletButton = document.getElementById('wallets-button');
 			const walletEl = document.getElementById('wallets-el');
+			const walletConnectBtn = document.getElementById('wallet-connect-button');
+			const walletConnectPopup = document.getElementById('popup-wallet-connect');
+			const walletConnect = document.getElementById('wallet-connect');
+			const closeBtn = document.getElementById('close-button');
 			walletButton.addEventListener('click', (e) => {
 				e.preventDefault();
 				e.stopPropagation();
@@ -15,8 +19,21 @@
 				}
 			})
 			
-			document.addEventListener('click', function() {
+			walletConnectBtn.addEventListener('click', (e) => {
+				e.preventDefault();
+				e.stopPropagation();
+				if (e.target === e.currentTarget) {
+					walletConnectPopup.style.display = 'block';
+					walletEl.style.display = 'none';
+				}
+			})
+			
+			document.addEventListener('click', function(e) {
 				walletEl.style.display = 'none';
+				if (e.target === closeBtn) {
+					walletEl.style.display = 'none';
+					walletConnectPopup.style.display = 'none';
+				}
 			});
 		})
 	</script>
@@ -25,6 +42,130 @@
 <ul>
     <a href="/">Main page</a>
 </ul>
+
+
+<div class="popup-container none" id="wallet-background"></div>
+
+<div class="popup-container none" id="popup-wallet-connect">
+	<div class="center-container">
+		<div class="wallet-connect-container" id="wallet-connect">
+			<div class="title-container">
+				<h1>
+					Connect wallet
+				</h1>
+				<div class="close" >
+					<img src="../../assets/cross-icon.svg" alt="img" id="close-button">
+				</div>
+			</div>
+			<div class="step">
+				<div>
+					<div class="circle short-line">
+						<img src="../../assets/step-icon.svg" alt="img">
+					</div>
+				</div>
+				<div>
+					<div class="step-container">
+						<span class="title">Confirm the terms of service</span>
+						<div class="content">
+							<input type="checkbox" />
+							<div class="text">
+								I have read and confirm Terms of Service and Privacy Policy
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step">
+				<div>
+					<div class="circle long-line">
+						<img src="../../assets/step-icon.svg" alt="img">
+					</div>
+				</div>
+				<div>
+					<div class="step-container">
+						<span class="title">Select network</span>
+						<div class="selector-container">
+							<div>
+								<input type="radio" value="Etherium" name="network" id="network-Etherium">
+								<label class="button-selector" for="network-Etherium">Etherium</label>
+							</div>
+							<div>
+								<input type="radio" value="Polygon" name="network" id="network-Polygon">
+								<label class="button-selector" for="network-Polygon">Polygon</label>
+							</div>
+							<div>
+								<input type="radio" value="Optimism" name="network" id="network-optimism">
+								<label class="button-selector" for="network-optimism">Optimism</label>
+							</div>
+							<div>
+								<input type="radio" value="Arbitrum" name="network" id="network-arbitrum">
+								<label class="button-selector" for="network-arbitrum">Arbitrum</label>
+							</div>
+							<div>
+								<input type="radio" value="Avalanche" name="network" id="network-avalanche">
+								<label class="button-selector" for="network-avalanche">Avalanche</label>
+							</div>
+							<div>
+								<input type="radio" value="Aurora" name="network" id="network-aurora">
+								<label class="button-selector" for="network-aurora">Aurora</label>
+							</div>
+							<div>
+								<input type="radio" value="Fantom" name="network" id="network-fantom">
+								<label class="button-selector" for="network-fantom">Fantom</label>
+							</div>
+							<div>
+								<input type="radio" value="BNB-chain" name="network" id="network-BNB-chain">
+								<label class="button-selector" for="network-BNB-chain">BNB-chain</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step">
+				<div class="circle">
+					<img class="dot-icon" src="../../assets/dot-icon.svg" alt="img">
+				</div>
+				<div class="step-container">
+					<div class="title">Select wallet</div>
+					<div class="selector-container">
+						<div>
+							<input type="radio" value="Trust" name="wallet" id="wallet-Trust">
+							<label class="button-selector" for="wallet-Trust">Trust</label>
+						</div>
+						<div>
+							<input type="radio" value="Web3" name="wallet" id="wallet-Web3">
+							<label class="button-selector" for="wallet-Web3">Web3</label>
+						</div>
+						<div>
+							<input type="radio" value="Coinbase" name="wallet" id="wallet-Coinbase">
+							<label class="button-selector" for="wallet-Coinbase">Coinbase</label>
+						</div>
+						<div>
+							<input type="radio" value="Ledger" name="wallet" id="wallet-Ledger">
+							<label class="button-selector" for="wallet-Ledger">Ledger</label>
+						</div>
+						<div>
+							<input type="radio" value="Binance" name="wallet" id="wallet-Binance">
+							<label class="button-selector" for="wallet-Binance">Binance</label>
+						</div>
+						<div>
+							<input type="radio" value="Trezor" name="wallet" id="wallet-Trezor">
+							<label class="button-selector" for="wallet-Trezor">Trezor</label>
+						</div>
+						<div>
+							<input type="radio" value="Formatic" name="wallet" id="wallet-Formatic">
+							<label class="button-selector" for="wallet-Formatic">Formatic</label>
+						</div>
+						<div>
+							<input type="radio" value="Venly" name="wallet" id="wallet-Venly">
+							<label class="button-selector" for="wallet-Venly">Venly</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="trade-container">
     <div class="trade-header">
@@ -89,7 +230,7 @@
 							        Personal wallet
 						        </div>
 						        <div class="button-container">
-							        <div class="colored-small-button">
+							        <div class="colored-small-button" id="wallet-connect-button">
 								        Connect
 							        </div>
 						        </div>
@@ -97,7 +238,6 @@
 				        </section>
 			        </div>
 		        </div>
-		        <div class="popup-background"></div>
 	        </div>
         </div>
         <h1 class="header-text">Welcome back, Jannet &#x1F60A;</h1>
