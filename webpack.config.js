@@ -8,6 +8,7 @@ module.exports = {
 	entry: {
 		components: './src/pages/Components/index.js',
 		trade: './src/pages/Trade/index.js',
+		tradePageWallets: './src/pages/Trade/TradePageWallets/index.js',
 		wallets: './src/pages/Wallets/index.js',
 		transfer: './src/pages/Wallets/Transfer/index.js',
 		dashboard: './src/pages/Dashboard/index.js',
@@ -46,6 +47,11 @@ module.exports = {
 			filename: 'trade.html',
 			template: 'src/pages/Trade/index.html',
 			chunks: ['trade'],
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'tradePageWallets.html',
+			template: 'src/pages/Trade/TradePageWallets/index.html',
+			chunks: ['tradePageWallets'],
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'wallets.html',

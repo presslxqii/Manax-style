@@ -9,6 +9,7 @@
     --wallets-header-background-color: #0A0E16;
     --black-button-color: #0A0E16;
     --table-header: #0A0E16;
+    --wallet-item-container-background-color: #0A0E16;
     --table-text-color: #FFFFFF80;
     --table-hover-color: #171E2D;
     --colored-button-color: linear-gradient(123.32deg, #FF9500 51.94%, #F8359E 115.67%);
@@ -59,7 +60,11 @@
     --placeholder-color: #667085;
     --checkbox-color: #FBC742;
     --selector-button-text-color: #667085;
+    --selected-text-color: #667085;
     --selector-button-background-color: #0E1523;
+    --wallet-connect-backgoud-color: #1C222C;
+    --wallet-connect-qr-backgoud-color: #66708533;
+    --wallet-connect-tab-shadow-color: 0 1px 3px rgba(16, 24, 40, 0.1), 0 1px 2px rgba(16, 24, 40, 0.06);
 }
 
 * {
